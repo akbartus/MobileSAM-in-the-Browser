@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+.upload-container {
+    text-align: center;
+}
+
+.upload-container label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#status {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+canvas {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+#main {
+    margin-top: 5%;
+    text-align: center;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+label {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+label:hover {
+    background-color: #45a049;
+}

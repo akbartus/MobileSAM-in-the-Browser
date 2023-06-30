@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MobileSAM in the Browser</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/onnxruntime-web/1.14.0/ort.wasm.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"> </script>
+    <link href="css/styles.css">
+</head>
+
+<body>
+    <div id="main">
+        <label for="file-in">Upload Image</label>
+        <input title="Image from File" type="file" id="file-in" name="file-in">
+        <div style="display: none;">
+            <img id="original-image" src="#" />
+        </div>
+        <h2></h2>
+        <span id="status">No image uploaded</span>
+        <canvas id="canvas"></canvas>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
