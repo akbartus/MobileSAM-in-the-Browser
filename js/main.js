@@ -20,7 +20,7 @@ async function handleClick(event) {
     context.fillStyle = 'green';
     context.fillRect(x, y, 10, 10);
     const pointCoords = new ort.Tensor(new Float32Array([x, y, 0, 0]), [1, 2, 2]);
-    const pointLabels = new ort.Tensor(new Float32Array([0, -1]), [1, 2]);
+    const pointLabels = new ort.Tensor(new Float32Array([1, 0]), [1, 2]);
     const maskInput = new ort.Tensor(new Float32Array(256 * 256), [1, 1, 256, 256]);
     const hasMask = new ort.Tensor(new Float32Array([0]), [1,]);
     const origianlImageSize = new ort.Tensor(new Float32Array([684, 1024]), [2,]);
