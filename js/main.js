@@ -80,7 +80,7 @@ async function handleImage(img) {
     imageDataTensor = new ort.Tensor(tf_tensor.dataSync(), tf_tensor.shape);
 
     ort.env.wasm.numThreads = 1;
-    const session = await ort.InferenceSession.create('https://cdn.glitch.me/1bd71fd8-ee70-4d58-9594-6680f5fcdc3b/mobilesam.encoder.onnx');
+    const session = await ort.InferenceSession.create('https://huggingface.co/Akbartus/projects/resolve/main/mobilesam.encoder.onnx');
     console.log("Encoder Session", session);
     const feeds = { "input_image": imageDataTensor };
     let start = Date.now();
