@@ -13,4 +13,4 @@ This is the example implementation of <a href="https://github.com/ChaoningZhang/
 The project was made possible thanks to <a href="https://github.com/facebookresearch/segment-anything">SAM</a>, <a href="https://github.com/ChaoningZhang/MobileSAM">MobileSAM</a> and <a href="https://github.com/vietanhdev/samexporter">SAMExporter</a> repositories. In particular, SAM's original model was used in conversion to ONNX and creating a decoder. MobileSAM's original file was used in converting to ONNX and creating encoder. SAMExporter was used in doing conversions to ONNX.
         
 ### **Demo**
-Demo: [Demo](https://mobilesam.glitch.me/)
+Demo: [Demo](https://akbartus.github.io/MobileSAM-in-the-Browser/)
